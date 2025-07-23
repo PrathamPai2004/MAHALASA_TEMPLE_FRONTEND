@@ -99,7 +99,7 @@ function Media() {
         ))}
       </div>
       <div className="media-container">
-        <h1 className='media-heading'>MAHALASA - MEDIA</h1>
+        <h1 className='media-heading'>MEDIA PAGE OF MAHALASA SAUNSTHAN</h1>
         <div className="scroller">
           <ul className="tag-list">
             {[...Array(8)].map((_, idx) => (
