@@ -1,4 +1,4 @@
-import '../styles/Dormview.css'
+import '../styles/DormView.css'
 
 
 
