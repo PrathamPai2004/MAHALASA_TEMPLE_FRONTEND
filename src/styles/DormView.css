@@ -1,0 +1,43 @@
+.dorm-container {
+	display: flex;
+	overflow-x: auto;
+	white-space: nowrap;
+	scroll-behavior: smooth;
+  }
+  
+  .each-room {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+  }
+  
+  #each-room {
+	flex: 0 0 auto; /* Prevent shrinking, no growing */
+	width: 200px; /* Or whatever fixed width works */
+  }
+  #confirm-booking-container{
+	position: sticky;
+	/* background-color: burlywood; */
+	
+  }
+
+
+  .room-booking-success{
+  position: fixed; /* stick it to the screen */
+  top: 0;
+  left: 0;
+  width: 100vw;   /* full viewport width */
+  height: 100vh;  /* full viewport height */
+  background-color: yellow; /* or any success background */
+  z-index: 9999; /* make sure it's above other content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  animation: valid-otp forwards ease 1.5s;
+  gap: 15px;
+  }

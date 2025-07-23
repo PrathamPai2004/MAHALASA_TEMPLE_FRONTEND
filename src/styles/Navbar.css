@@ -1,0 +1,46 @@
+/* Make navbar sticky at the top */
+.navbar{
+	height: 50px;
+	width: 100%;
+	background-color: transparent;
+	animation: navbar-reveal forwards ease-in 1s;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(cadetblue,grey,brown);
+	box-shadow: 0px -4px 9px black,0px -4px 7px rgb(255, 255, 255);
+	font-family: MontNormal;
+}
+
+
+@keyframes navbar-reveal {
+	from{
+		bottom: -50px;
+	}
+	to{
+		bottom: 0px;
+	}
+}
+/* Styling for the navbar links */
+.navbar a{
+	
+	vertical-align: middle;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #333;
+	font-weight: 700;
+	color: white;
+  }
+  
+  .navbar a:hover {
+	background-color: #f0f0f0;
+	color: #007bff;
+  }
+  
+  /* Optional: Add a background color when scrolled */
+  .sticky-navbar.scrolled {
+	background-color: #007bff;
+	color: white;
+  }
+  
+  

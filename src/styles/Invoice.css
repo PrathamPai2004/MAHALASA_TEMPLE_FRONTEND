@@ -1,0 +1,139 @@
+.invoice-page {
+  width: 115%;
+  max-width: 800px;
+  font-family: MontNormal;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.jai-mahalasa-text{
+  font-family: Samakaran;
+  background-color: #3a3a3a;
+  color: white;
+}
+
+.in-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3a3a3a;
+}
+
+.invoice-heading {
+  background-color: #f0c674;
+  padding: 10px;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.address-fields{
+  height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: rgb(61, 61, 61);
+  justify-content: space-between;
+}
+.invoice-container {
+  background: #e0f7f9;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.in-field-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  gap:10px;
+  width: 90%;
+  /* background-color: #007bff; */
+}
+
+
+.in-field-values {
+  margin: auto;
+  padding: 0;
+  width: 102%;
+  margin-left: -1.5%;
+  color: red;
+  font-size: larger;
+  font-weight: 500;
+  display: flex;
+  white-space: pre-line;
+  word-wrap: normal;
+  justify-content: space-between;
+  /* gap:20px; */
+  /* background-color: #0056b3; */
+}
+
+.in-qty {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.in-qty-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.in-qty-table th,
+.in-qty-table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.tr-total td {
+  font-weight: bold;
+  background: #e8e8e8;
+}
+.block-div{
+  position: absolute;
+  word-spacing: 5px;
+  width:  40%;
+  margin: auto;
+  /* left:  20%; */
+  height: 40px;
+  background-color: rgb(217, 231, 217);
+  transform: rotate(90deg);
+  transform-origin: left top;
+  text-align: center;
+  margin-left: -10px ;
+  
+}
+.block-div p{
+  transition: all ease 1s;
+  transform: scale(1.1);
+  color: #007bff;
+}
+.contents{
+  text-align: center;
+}
+
+
+.button {
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  cursor: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

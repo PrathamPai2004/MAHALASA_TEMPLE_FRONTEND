@@ -1,0 +1,112 @@
+.confirm-container-dorm{
+	background:rgb(199, 127, 127);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	position: fixed;
+	z-index: 1000;
+	height: 300px;
+	width: 40vw;
+	margin: auto;
+	right: 0;
+	top:0px;
+	box-shadow: 0 4px 10px rgba(100, 100, 100, 0.85);
+	color: rgb(210, 94, 94);
+	animation: confirm-container-reveal both ease-in-out 1s ;
+	transition: all 0.6s;
+
+}
+.confirm-container:hover{
+	transform: scale(1.05) ;
+}
+.confirm-labels{
+	color: rgb(24, 23, 23);
+	font-size: larger;
+}
+@keyframes confirm-container-reveal {
+	0%{
+		height: 10px;
+		width: 10px;
+		top:0;
+		opacity: 0;
+	}
+	30%{
+		height: 100px;
+		width: 20vw;
+		opacity: 0.1;
+	}
+	100%{
+		/* background:linear-gradient(grey,rgb(248, 161, 0),grey); */
+		/* background: linear-gradient(135deg, #43cea2, #185a9d);; */
+		background: linear-gradient(135deg, #e0eafc, #cfdef3);
+		/* background-color: #43cea2; */
+		/* border-radius: 100px; */
+		border-radius: 16px 32px 8px 4px;
+		
+		/* background: linear-gradient(135deg, #dfe9f3, #ffffff); */
+		height: 300px;
+		width: 40vw;
+		top:30%;
+		right: 30%;
+		opacity: 1;
+	}
+}
+
+.confirm-form{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: rgba(0, 0,0, 0.1);
+	height: 200px;
+	width: 40vw;
+}
+.confirm-inputs{
+	background-color: #e7e4e2;
+}
+#confirm-btns{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: linear-gradient(135deg, #43cea2, #185a9d);; /* grey to light grey */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background 0.8s ease,transform 0.8s ease, box-shadow 0.8s ease;
+  
+  
+}
+#confirm-btns:hover {
+  animation: button-background-reveal forwards ease 0s;
+   /* slightly darker on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+@keyframes button-background-reveal {
+	0%{
+		background: linear-gradient(135deg, #43cea2, #185a9d);
+	}
+	
+	100%{
+		background: linear-gradient(135deg, #359f7f, #103c68);
+	}
+}		
+.dorm-heading{
+	background-color: none;
+	color: white;
+}
+.confirm-room-booking-text{
+	font-size: x-large;
+	background-color: #9fd7c6;
+	padding: 0px 10%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border: 3px solid rgb(162, 74, 74);
+}

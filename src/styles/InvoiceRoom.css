@@ -1,0 +1,28 @@
+.invoice-room-container{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 80vh;
+	width: 80vw;
+	margin: auto;
+	background-color: cornflowerblue;
+	position: relative;
+	top:20px;
+}
+.invoice-room-heading{
+	height: 55px;
+	width: 100%;
+	text-align: center;
+	border-bottom: 3px solid brown;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.invoice-room-information{
+	height: 80%;
+	width: 100%;
+	background-color: bisque;
+}
+.name-field{
+	display: flex;
+}

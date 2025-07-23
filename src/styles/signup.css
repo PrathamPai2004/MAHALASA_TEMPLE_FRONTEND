@@ -1,0 +1,88 @@
+body{
+	background-color: white;
+	border-top: 22px rgb(12, 38, 59) solid;
+	border-left: 22px rgb(4, 59, 104) solid;
+	border-bottom: 22px rgb(121, 121, 226) solid ;
+	border-right: 22px rgb(93, 32, 126) solid;
+	
+}
+.container{
+	height: 400px;
+	width: 600px;
+	background-color:rgb(253, 253, 253);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-top-left-radius: 80px;
+	border-bottom-right-radius: 80px;
+	border: 3px solid black;
+	box-shadow: 2px 2px 3px rgb(127, 124, 124),-2px -2px 4px gray;
+
+	/* gap: 10px; */
+}
+
+.form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+}
+.labels{
+	color: rgb(133, 125, 125);
+	position: relative;
+	left: -5%;
+	font-weight: 500;
+}
+/* attribues div */
+.attr{
+	height: 30px;
+	position: relative;
+	/* display: flex; */
+	/* border: 2px solid red; */
+	z-index: 100;
+	/* background-color: aquamarine; */
+}
+.register{
+	background-color: gray;
+	transition: transform 800ms;
+}
+.register:hover{
+	transform: background-color ease-in;
+	background-color: cadetblue;
+}
+.register-inputs{
+	background-color: aliceblue;
+	border: none;
+	padding: 3px 8px;
+	width: 300px;
+	height: 30px;
+	color: black;
+	transition: transform 0.6s;
+}
+.register-inputs:focus{
+	background-color: rgb(189, 186, 186);
+	color: rgb(98, 5, 5);
+	letter-spacing: 1px;
+	font-weight: 500;
+	transform: scale(1.2);
+}
+.new-user-name{
+	color: rgb(77, 77, 76);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	position: absolute;
+	font-size: x-large;
+	letter-spacing: 1px;
+	font-variant: small-caps;
+	top:15px;
+
+}
+
+
+.bad-register{
+	height: 40px;
+	width: 100px;
+	background-color: aquamarine;
+}

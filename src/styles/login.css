@@ -1,0 +1,249 @@
+
+
+.incorrect-dialag,.good-login,.user-not-exist{
+	animation: dialag-reveal 0.5s linear forwards;
+}
+.incorrect-dialag{
+	background:linear-gradient(red,orange);
+}
+.incorrect-dialag,.good-login{
+	height: 100px;
+	width: 500px;
+	margin: auto;
+	background-color: rgb(168, 170, 169);
+	border-radius: 30px;
+	border: 2px solid rgb(244, 244, 232);
+	outline: 3px solid rgb(89, 89, 93);
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: -50px;
+	justify-content: center;
+	box-shadow: 2px 4px 3px rgb(138, 76, 76),-4px -5px 15px rgb(39, 35, 43);
+
+	/* top: 10px; */
+	/* animation: dialag-reveal 0.5s linear forwards; */
+}
+.good-login{
+	color: rgb(0, 0, 0);
+	font-style: italic;
+	font-family: Arial, Helvetica, sans-serif;
+	background: radial-gradient(#ffffff,#8ae1f3,#040558);
+	box-shadow: none;
+}
+.user-not-exist{
+	color: white;
+	font-size: larger;
+	letter-spacing: 2px;
+	height: 100px;
+	width: 400px;
+	margin: auto;
+	background-color: rgb(168, 170, 169);
+	border-radius: 30px;
+	border: 2px solid rgb(244, 244, 232);
+	outline: 3px solid rgb(89, 89, 93);
+	display: flex;
+	align-items: center;
+	position: relative;
+	/* margin: auto; */
+	justify-content: center;
+	box-shadow: 2px 4px 3px rgb(138, 76, 76),-4px -5px 15px rgb(39, 35, 43);
+	/* top: 10px; */
+	background: radial-gradient(#FF0000);
+
+}
+
+
+
+.h1{
+	background-color: inherit;
+	position: relative;
+	top:-30px;
+	text-decoration: dotted;
+	padding: 5px 10px;
+	box-shadow: none;
+
+}
+.toggleButtonContainer{
+	height: 40px;
+	width: 50px;
+	background-color: rgb(163, 173, 173);
+	border-radius: 50%;
+	position: absolute;
+	float: left;
+	right: -15%;
+	z-index: 100;
+	/* bottom:20px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* border: 1px solid; */
+	top:-5px;
+}
+.toggleButtonContainer:hover{
+	background-color: rgb(161, 160, 160);
+}
+.toggleButton p{
+	position: absolute;
+	left: -10px;
+}
+.toggleButton{
+	
+	background-color: transparent;
+	position: absolute;
+	left: -10px;
+	color: brown;
+}
+#show-hide-text{
+	color: black;
+	position: relative;
+	 /* top:-5px; */
+	left: 0px; 
+	font-size: x-small;
+	
+}
+/* .show-password-button{
+	padding: 5px 10px;
+	width: 50px;
+}
+#show-password div p{
+	font-size: x-small;
+	line-height: 1px;
+} */
+
+@keyframes dialag-reveal {
+	0%{
+		top:-100px;
+		opacity: 0;
+	}
+	50%{
+		box-shadow: 5px 10px 8px rgb(38, 37, 37),-6px -12px 8px rgb(255, 0, 0),3px 6px 6px rgb(54, 126, 66);
+
+	}
+	100%{
+		top:-50px;
+	}
+}
+.message{
+	width: 50%;
+	/* sbackground-color: antiquewhite; */
+	animation: textReveal 0.7s linear forwards;
+	position: relative;
+	font-weight: 500;
+	
+}
+@keyframes textReveal {
+	from{
+		top:-20px;
+		/* background-color: aqua; */
+		opacity: 0;
+	}
+	to{
+		top:10px;
+		opacity: 1;
+	}
+}
+.incorrect-dialag::after,.good-login::after{
+  content: '';
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  height: 4px;
+  background-color: rgb(202, 239, 210);
+  width: 5px;
+  border-radius: 30px;
+  animation: borderTimeout 0.8s linear forwards;
+}
+@keyframes borderTimeout {
+	from {
+	  height: 100%;
+	}
+	to {
+	  height: 0%;
+	}
+  }
+.hidden{
+	visibility: hidden;
+}
+/* .good-login{
+	height: 100px;
+	width: 250px;
+	background-color: rgb(216, 61, 61);
+	border-radius: 30px;
+	border: 2px solid yellow;
+	outline: 3px solid blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 40%;
+	top: 50px;
+} */
+
+
+.login-button{
+	/* transition:background 1s ease; */
+	background: linear-gradient(red,black);
+	z-index: 100;
+	background-size: 200% 200%;
+	transition: background-position 0.5s ease;
+}
+.login-button:hover{
+	background-position: right center;
+	animation: gradientShift  0s infinite ease-in-out;
+}
+@keyframes gradientShift {
+	from {
+	  background: linear-gradient( #4aa3e8, #080707);
+	}
+	to{
+	  background: linear-gradient( #6a11cb, #2575fc);
+	}
+}
+
+
+  .link-btn{
+	text-decoration: none;
+	background-color: rgb(240, 226, 226);
+	padding: 4px 15px;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	color: #040558;
+	position: absolute;
+	left: 25%;
+  }
+  .link-btn:hover{
+	background-color: rgb(213, 213, 213);
+	color: black;
+  }
+  .home-btn-div{
+	/* background-color: #040558; */
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .home-btn{
+
+	 text-decoration: none;
+	 color: #040558;
+	 padding: 10px 5px;
+	 background-color: transparent;
+	 letter-spacing: 5px;
+	 font-size: larger;
+	 /* left: 25%; */
+	 /* position: absolute; */
+  }
+  .home-btn:hover{
+	color: cadetblue;
+
+  }
+  .forgot-password-btn{
+	margin-top: 10px;
+	padding: 0px 0px;
+	text-decoration:none;
+	color: orangered;
+	letter-spacing: 2px;
+	font-variant: small-caps;
+  }

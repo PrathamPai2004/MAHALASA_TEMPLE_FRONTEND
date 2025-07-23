@@ -1,0 +1,88 @@
+/* App.css */
+
+/* Reset some basic elements */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: MontNormal;
+  }
+h1,h2,h3{
+	font-family: MontNormal;
+}
+
+  @font-face{
+	font-family: MontItalic;
+	src: url(../src/assets/fonts/Montserrat-Italic-VariableFont_wght.ttf);
+  }
+  @font-face {
+	font-family: MontNormal;
+	src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+  }
+  
+  /* Base body styling */
+  body {
+	
+	justify-content: center;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+	  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: #f9f9f9;
+	color: #333;
+	line-height: 1.6;
+  }
+  
+  /* App container */
+  .App {
+	padding: 2rem;
+	max-width: 1200px;
+	margin: auto;
+  }
+  
+  /* Links */
+  a {
+	color: #007bff;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+  }
+  
+  /* Basic button styling */
+  button {
+	padding: 0.5rem 1rem;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: none;
+  }
+  
+  button:hover {
+	background-color: #0056b3;
+  }
+  
+  /* Inputs */
+  input,
+  select,
+  textarea {
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+	width: 100%;
+	max-width: 100%;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+	outline: none;
+	border-color: #007bff;
+  }
+  
+  /* Utility classes */
+  .text-center {
+	text-align: center;
+  }
+  

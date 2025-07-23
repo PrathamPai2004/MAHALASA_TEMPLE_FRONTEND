@@ -1,0 +1,361 @@
+@font-face {
+	font-family: Samakaran;
+	src: url(../assets/fonts/SAMAN___.ttf);
+}
+
+body::-webkit-scrollbar{
+	visibility: hidden;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	height: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border: none;
+}
+.opening-mahalasa-saunsthan-text{
+	position: relative;
+	height: 50px;
+	width: 40%;
+	background-color: white;
+	color: black;
+	font-size: larger;
+	z-index: 100000;
+	margin: auto;
+	animation: opening-mahalasa-text-reveal ease-in 5s;
+	/* text-align: center; */
+	display: flex;
+	justify-content: center;
+	font-family: MontNormal;
+	word-spacing: 20px;
+	align-items: center;
+	flex-direction: row;
+	transform: scale(0);
+
+  }
+
+  @keyframes opening-mahalasa-text-reveal {
+	from{
+		opacity: 1;
+		transform: scale(3.5);
+	}
+	to{
+		opacity: 0;
+		transform: scale(0);
+	}
+  }
+
+.mahalasa-page {
+	width: 100vw;
+	height : auto;
+	overflow-x: hidden;
+	
+}
+.overlay{
+	margin: 0;
+	height: 100vh;
+	width: 101%;
+	background-color: black;
+	position: absolute;
+	animation: set-overlay forwards 7s ;
+	/* opacity: 0.3; */
+}
+@keyframes set-overlay {
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0.6;
+	}
+	
+}
+
+.mahalasa-container {
+	opacity: 1;
+	height: 100vh;
+	width: 100%;
+	background: url('../assets/mahalasa_portrait.jpg') no-repeat center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: mahalasa-container-shine forwards ease 2s;
+  }
+  @keyframes mahalasa-container-shine {
+	from{
+		box-shadow: -10px -10px 50px  wheat,-20px -20px 100px rgb(253, 253, 253);
+	}
+	to{
+		box-shadow: 2000px 0px 1000px wheat,2000px 0px 1000px rgb(253, 253, 253);
+	}
+  }
+  
+  
+  #mahalasa-heading {
+	width: 100%;
+	text-align: center;
+	/* font-family: Samakaran; */
+	font-family: Samakaran;
+	/* letter-spacing: 2px; */
+	font-size: 4rem;
+	/* text-align: center; */
+	color: rgba(173, 173, 173,0.9);
+	background: none;
+	box-shadow: none;
+	text-shadow: 2px 2px 8px black;
+	position: absolute;
+	white-space: nowrap;
+	overflow: hidden;
+	top:-100%;
+	/* left: -90px; */
+	
+	/* margin-bottom: 700px; */
+	animation: heading-reveal forwards ease 5.5s;
+	/* transition: all ease 1s; */
+	  /* transition: transform 0.4s ease, box-shadow 0.4s ease; */
+	  transition:  box-shadow 0.4s ease, word-spacing 0.4s ease,transform 0.6s ease;
+	
+	/* top:1px; */
+  }
+
+
+#mahalasa-heading:hover{
+	/* dont remove this box shadow -best montage animation*/
+	box-shadow: -2000px 0px 1000px wheat,2000px 0px 1000px rgb(253, 253, 253);
+	transform: scale(1.5);
+	word-spacing: 3px;
+}
+#mahalasa-heading:hover .mahalasa-container{
+	background: aliceblue;
+}
+
+  @keyframes heading-reveal {
+		0%{
+			/* margin-bottom: 700px; */
+			opacity: 0.3;
+			z-index: 1000;
+			top:-100%;
+			
+			
+		}
+		
+		15%{
+			
+			transform: scale(0.7);
+			/* transform: scale(6); */
+			/* word-break:keep-all; */
+			/* overflow: auto; */
+			/* white-space: unset; */
+			/* z-index: 100; */
+			/* letter-spacing: 40px; */
+		}
+		45%{
+			top:0;
+			/* box-shadow: -2000px 0px 1000px wheat,2000px 0px 1000px rgb(253, 253, 253); */
+		}
+		60%{
+			top:35%;
+			transform: scale(2.5);
+			text-shadow: 2px 5px 10px wheat;
+			/* font-family: MontItalic; */
+			
+			
+			/* text-align: left; */
+			/* margin-left: -20%; */
+			/* transform: scale(0.8); */
+			/* transform: scale(0.5); */
+			/* word-spacing: 15px; */
+			/* letter-spacing: -5px; */
+			/* margin-left: 100%; */
+			opacity: 0.6;
+			z-index: 1000;
+		}
+		
+		75%{
+			
+			/* top:40%; */
+			/* margin-left: 50px; */
+			/* letter-spacing: 10px; */
+			text-shadow: 4px 8px 10px rgb(230, 70, 70);
+			/* word-spacing: 100px; */
+			/* margin-left: -10%; */
+			/* letter-spacing: 50px; */
+			color: rgb(245, 161, 161);
+		}
+		99%{
+			/* transform: scale3d(20.5,20.2,1.2); */
+			opacity: 0.3;
+			
+			word-spacing: 50px;
+			/* word-spacing: 100px; */
+		}
+		100%{
+			top:45%;
+			word-spacing: 10px;
+			margin-left: 0;
+			margin-bottom: 0px;
+			text-shadow: 2px 2px 5px red;
+			opacity: 1;
+			transform: scale(1.3);
+			
+			/* box-shadow: -2000px 0px 1000px wheat,2000px 0px 1000px rgb(253, 253, 253); */
+		}
+		
+  }
+   /* @keyframes heading-reveal {
+  0% {
+    transform: translateY(-100px) scale(0.6);
+    opacity: 0;
+  }
+  45% {
+    transform: translateY(0) scale(1.1);
+    opacity: 1;
+  }
+  65% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1); /* 👈 Ends at normal scale */
+    /* text-shadow: 2px 2px 5px red; */
+    /* opacity: 1; */
+
+
+  @keyframes heading-reveal-updated {
+	from{
+		margin-left: -900px;
+		opacity: 0.3;
+	}
+	to{
+		margin-left: -250px;
+		opacity: 1;
+	}
+}
+@keyframes saunsthan-reveal{
+	from{
+		top: -900px;
+		opacity: 0.3;
+	}
+	to{
+		top: 285px;
+		opacity: 1;
+	}
+}
+@keyframes kumta-reveal {
+	from{
+		margin-right: -900px;
+		opacity: 0.3;
+	}
+	to{
+		margin-right: -50px;
+		opacity: 1;
+	}
+}
+  
+  .mahalasa-main {
+	height: 1000px;
+	background-color: aqua;
+	padding: 2rem;
+  }
+  
+  .mahalasa-opening-screen{
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap:10px;
+	top:0px;
+	/* z-index: 10000; */
+	animation: mahalasa-opening-screen-reveal forwards ease-in 6s;
+  }
+  .left-container{
+	height: 100vh;
+	width: 49vw;
+	position: absolute;
+	display: flex;
+	gap:10px;
+
+
+  }
+  .layer1{
+	/* 4 layers are there */
+	height: 100%;
+	width: 25%;
+	z-index: 10000;
+	background:linear-gradient(#3ca55c ,#b5ac49);
+	animation: layer1-reveal forwards ease-in 4s;
+	border-right: 5px solid salmon;
+  }
+    .right-container{
+	height: 110%;
+	width: 49vw;
+	position: absolute;
+	display: flex;
+	gap:10px;
+	right: 0;
+	top:-12%;
+	transform: rotate(180deg);
+  }
+  
+  .layer2{
+	/* 4 layers are there */
+	height: 90%;
+	width: 25%;
+	position: relative;
+	background:linear-gradient(#b5ac49,#3ca55c);
+	animation: layer2-reveal forwards ease-in 4s;
+	
+  }
+
+  @keyframes mahalasa-opening-screen-reveal {
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+		display: none;
+	}
+  }
+
+  @keyframes layer1-reveal {
+	from{
+		width: 25%;
+		opacity: 1;
+		z-index: 10000;
+	}
+	to{
+		width: 0%;
+		opacity: 0.5;
+	}
+  }
+
+  @keyframes layer2-reveal {
+	from{
+		/* width: 25%; */
+		opacity: 1;
+		transform: translateX(0%);
+		width: 25%;
+	}
+	to{
+		/* right: -100%; */
+		transform: translateX(-100%);
+		opacity: 0.5;
+		width: 0%;
+	}
+  }
+  
+
+  .custom-cursor{
+	/* border: 2px solid red; */
+	/* border-top: 2px solid red; */
+	border-radius: 50%;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	border-left: 2px solid orange;
+	border-right: 2px solid yellow;
+	box-shadow: 2px 4px 10px rgb(223, 128, 128),-2px -4px 50px white;
+	background-color: rgb(132, 131, 131);
+  }
