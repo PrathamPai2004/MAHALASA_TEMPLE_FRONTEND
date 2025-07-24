@@ -23,6 +23,7 @@ import CustomCursor from "./components/CustomCursor";
 import InvoiceRoom from './components/InvoiceRoom'
 import SplineLayer from './components/SplineLayer'
 import Media from './components/Media'
+import { Analytics } from '@vercel/analytics/react';
 function App() {
 
   const[countForAnimation,setCountAnimation]=useState(0);
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Analytics/>
       <CustomCursor/>
       <Routes>
         <Route path='/' element={<Mahalasa/>}></Route>
