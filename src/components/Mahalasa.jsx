@@ -56,7 +56,7 @@ function Mahalasa(){
 						<source src="/assets/mahalasa_temple_cinematic_video_portrait.mp4" type="video/mp4" />
 					Your browser does not support the video tag.
 					</video>
-				</div> */ */}
+				</div> */ }
 				<h1 id='mahalasa-heading'>|| MAHALASA SAUNSTHAN MARDOL ||</h1>	
 				{/* <h1 id='mahalasa-heading'>|| MAHALASA </h1>
 				<h1 id='saunsthan-heading'>SAUNSTHAN</h1>
