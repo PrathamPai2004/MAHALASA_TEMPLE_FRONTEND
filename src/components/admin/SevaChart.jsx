@@ -79,7 +79,7 @@ function SevaChart() {
 		
       },
 	  {
-        label: "Seva Amount (₹)",
+        label: "Total Seva Amount (₹)",
         data: sevas.map((seva) => seva.seva_amount * seva.seva_bookings || 0),
         backgroundColor: "rgba(255, 159, 64, 0.6)",
         borderColor: "rgba(0, 159, 64, 1)",
