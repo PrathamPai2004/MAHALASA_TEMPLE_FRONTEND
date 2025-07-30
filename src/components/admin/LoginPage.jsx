@@ -16,7 +16,7 @@ function LoginPage() {
 
 
     try{
-      const response = await axios.post('http://localhost:3001/admin-login',{username,password});
+      const response = await axios.post('https://mahalasa-temple-backend.onrender.com/admin-login',{username,password});
         if (response.data.message === "success") {
         localStorage.setItem("isLoggedIn", "true");
         navigate(`dashboard/${response.data.username}`);

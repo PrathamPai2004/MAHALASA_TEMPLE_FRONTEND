@@ -38,7 +38,7 @@ const SevaTable = () => {
   ]);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/get-ranks')
+    axios.get('https://mahalasa-temple-backend.onrender.com/get-ranks')
       .then((response) => {
         const resultArray = response.data;
 

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Contacts() {
   const cardRefs = useRef([]);
 
-  const personNames = ["Pratham Pai","Veena Kamat", "Vinayak Pai", "Arya Saokar", "Kartik Shukla", "Madhav Kamat"
+  const personNames = ["Pratham Pai","Veena Kamat", "Vinayak Pai", "Prakash pai", "Kartik Shukla", "Madhav Kamat"
 	,"Preetam Bhat", "K A Bhat"
   ]
   const designations = ["Developer","Chairman","Temple Coordinator","Seva Admin","Discipline Head","Database adminstrator","Priest","Manager"]
@@ -15,7 +15,7 @@ function Contacts() {
   const imageUrl = ["/assets/indian_priest.jpg",
 	"/assets/aayi_montage_cropped.jpg",
 	"/assets/semi_traditional_female.jpg",
-	"/assets/arya_child_cropped.jpg",
+	"/assets/side_indian_male_portrait.jpg",
 	"/assets/indian_priest.jpg",
 	"/assets/kurta_female.jpg",
 	"/assets/indian_priest.jpg",

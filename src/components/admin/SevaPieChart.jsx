@@ -14,7 +14,7 @@ function SevaPieChart() {
   const [sevas, setSevas] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/seva-stats")
+    fetch("https://mahalasa-temple-backend.onrender.com/seva-stats")
       .then((res) => res.json())
       .then((data) => {
         console.log("Pie Seva Data:", data);

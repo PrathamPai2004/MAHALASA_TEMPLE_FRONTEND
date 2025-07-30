@@ -50,7 +50,7 @@ function Login(){
 	const handleSubmit = (e)=>{
 		e.preventDefault()
 		console.log(email,password)
-		axios.post('http://localhost:3001/login',{email,password}).then(
+		axios.post('https://mahalasa-temple-backend.onrender.com/login',{email,password}).then(
 			result=>{
 				if(result.data.status==="success"){
 					const helloUser = result.data.username;

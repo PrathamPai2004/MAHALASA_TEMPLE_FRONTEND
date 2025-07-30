@@ -45,7 +45,7 @@ function Checkout() {
 		console.log("Inside client handling submit")
 		if (checkPhone()) {
 			if (totalAmount > 0) {
-				axios.post('http://localhost:3001/confirm-seva', { seva_name, totalAmount, userName, phoneNum ,count})
+				axios.post('https://mahalasa-temple-backend.onrender.com/confirm-seva', { seva_name, totalAmount, userName, phoneNum ,count})
 					.then((result) => {
 						if (result.data.status === 'success') {
 							const now = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));

@@ -61,7 +61,7 @@ function SevaChart() {
   plugins: [verticalLabelPlugin],
 };
   useEffect(() => {
-    fetch("http://localhost:3001/seva-stats")
+    fetch("https://mahalasa-temple-backend.onrender.com/seva-stats")
       .then((res) => res.json())
       .then((data) => setSevas(data))
       .catch((err) => console.error("Failed to fetch sevas:", err));

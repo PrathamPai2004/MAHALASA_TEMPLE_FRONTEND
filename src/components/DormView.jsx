@@ -82,7 +82,7 @@ function DormView() {
   // Fetch rooms
   const fetchRooms = () => {
     axios
-      .get(`http://localhost:3001/rooms/${dormName}`)
+      .get(`https://mahalasa-temple-backend.onrender.com/rooms/${dormName}`)
       .then((res) => {
         setRooms(res.data);
 
@@ -130,7 +130,7 @@ function DormView() {
 
     const cur_date = Date.now();
     await axios
-      .post(`http://localhost:3001/rooms/books`, {
+      .post(`https://mahalasa-temple-backend.onrender.com/rooms/books`, {
         dormitory: dormName,
         roomNumber: roomNumber,
         holderName: holderName,
