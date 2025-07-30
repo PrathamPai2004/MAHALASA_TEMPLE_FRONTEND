@@ -41,7 +41,7 @@ function Mahalasa(){
 			<div className='overlay'></div>
 			<div className="mahalasa-container">
 
-				<div className='mahalasa-video'>
+{/* 				<div className='mahalasa-video'>
 					<video width="640" height="360"  autoPlay muted loop className='mahalasa-video-box'>
 						<source src="/assets/mahalasa_temple_cinematic_video_portrait.mp4" type="video/mp4" />
 					Your browser does not support the video tag.
@@ -52,11 +52,11 @@ function Mahalasa(){
 					Your browser does not support the video tag.
 					</video> */}
 
-					<video width="640" height="360"  autoPlay muted loop className='mahalasa-video-box'>
+{/* 					<video width="640" height="360"  autoPlay muted loop className='mahalasa-video-box'>
 						<source src="/assets/mahalasa_temple_cinematic_video_portrait.mp4" type="video/mp4" />
 					Your browser does not support the video tag.
 					</video>
-				</div>
+				</div> */ */}
 				<h1 id='mahalasa-heading'>|| MAHALASA SAUNSTHAN MARDOL ||</h1>	
 				{/* <h1 id='mahalasa-heading'>|| MAHALASA </h1>
 				<h1 id='saunsthan-heading'>SAUNSTHAN</h1>
