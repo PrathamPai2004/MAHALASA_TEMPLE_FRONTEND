@@ -10,6 +10,7 @@ function Navbar() {
         <Link to="/dorm-booking">Dormitory Booking</Link>
         <Link to="/sevas">Sevas</Link>
         <Link to="/media">Media</Link>
+        <Link to='/admin'>Admin</Link>
       </div>
     </>
   );

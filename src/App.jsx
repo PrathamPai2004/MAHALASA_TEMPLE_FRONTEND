@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import {BrowserRouter,Route,Routes, useParams} from 'react-router-dom'
 import Signup from './components/Signup'
 import Home from './components/Home'
 import Login from './components/Login'
@@ -23,10 +23,26 @@ import CustomCursor from "./components/CustomCursor";
 import InvoiceRoom from './components/InvoiceRoom'
 import SplineLayer from './components/SplineLayer'
 import Media from './components/Media'
+import LoginPage from './components/admin/LoginPage'
+import Dashboard from './components/admin/Dashboard'
+
+
+
+function ProtectedDashboard() {
+  const { username } = useParams();
+
+  const isLoggedIn = localStorage.getItem('isLoggedIn');
+  if (username !== "abc" && isLoggedIn!=true) {
+
+    return <Navigate to="/" replace />;
+  }
+
+  return <Dashboard />;
+}
+
 function App() {
 
   const[countForAnimation,setCountAnimation]=useState(0);
-  
   localStorage.setItem('countForAnimation',countForAnimation);
 
   return (
@@ -50,6 +66,9 @@ function App() {
        <Route path='/contacts' element={<Contacts/>}></Route>
        <Route path='/media' element={<Media/>}></Route>
        <Route path='/spline' element={<SplineLayer/>}></Route>
+       <Route path='/admin' element={<LoginPage/>}></Route>
+       <Route path='/admin/dashboard/:username' element={<ProtectedDashboard/>}></Route>
+       <Route path="*" element={<div>404: Page Not Found</div>} />
       </Routes>
     </BrowserRouter>
   

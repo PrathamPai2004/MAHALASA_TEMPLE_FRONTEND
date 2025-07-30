@@ -14,6 +14,52 @@ html, body {
 	overflow-x: hidden;
 	border: none;
 }
+
+.mmahalasa-video{
+	height: 95vh;
+	width: 200vw;
+	background-color: pink;
+	/* background-color: pink; */
+	position: absolute;
+	margin: auto;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom:100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	gap: 3%;
+}
+
+
+
+.mmahalasa-video-box{
+	box-shadow: -13px -16px 10px rgba(255, 255, 255,0.3),13px 16px 10px rgba(255, 255, 255,0.3);
+	/* for the individual videos */
+	height: 75vh;
+	/* width: 150vw; */
+	position: relative;
+	/* left: -30%; */
+	top:0;
+	margin: 0;
+	background-color: #3ca55c;
+	opacity: 1;
+	border-radius: 50px;
+	
+
+}
+
+
+#mahalasa-video-box2{
+	transition: opacity ease 1s;
+}
+#mahalasa-video-box2:hover{
+	opacity: 0;
+}
+
+
 .opening-mahalasa-saunsthan-text{
 	position: relative;
 	height: 50px;
@@ -96,7 +142,7 @@ html, body {
 	width: 100%;
 	text-align: center;
 	/* font-family: Samakaran; */
-	font-family: Samakaran;
+	font-family: Samakaran;			
 	/* letter-spacing: 2px; */
 	font-size: 4rem;
 	/* text-align: center; */
