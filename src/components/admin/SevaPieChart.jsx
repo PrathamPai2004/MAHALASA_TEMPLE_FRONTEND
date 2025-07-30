@@ -28,7 +28,7 @@ function SevaPieChart() {
     datasets: [
       {
         label: "Total Seva Amount (₹)",
-        data: sevas.map((seva) => seva.seva_amount * seva.seva_bookings || 0),
+        data: sevas.map((seva) => seva.seva_amount * seva.bookings || 0),
         backgroundColor: [
 			"#FF5733",
 			"#33FF57",
