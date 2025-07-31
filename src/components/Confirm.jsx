@@ -130,6 +130,7 @@ export function Confirm({ handleSubmit, goBack, phoneNum, setPhoneNum, userName,
 
 			    isOTPsent &&(
 				<div id="otp-div">
+					<p>Kindly Check whatsapp for the OTP by the business name DCCODER</p>
 			<input 
 				type="text" 
 				placeholder="Enter the OTP here.."
