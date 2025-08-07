@@ -44,7 +44,7 @@ function App() {
   // FOR KEEPING BACKEND ALIVE - SCRIPT STARTS HERE
   useEffect(() => {
     const pingBackend = () => {
-      fetch('https://your-backend.onrender.com/ping')
+      fetch('https://mahalasa-temple-backend.onrender.com/ping')
         .then(res => {
           if (res.ok) {
             console.log(`[PING] ✅ Backend alive - ${new Date().toLocaleTimeString()}`);
