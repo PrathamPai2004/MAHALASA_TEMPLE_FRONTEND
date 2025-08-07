@@ -41,6 +41,32 @@ function ProtectedDashboard() {
 }
 
 function App() {
+  // FOR KEEPING BACKEND ALIVE - SCRIPT STARTS HERE
+  useEffect(() => {
+    const pingBackend = () => {
+      fetch('https://your-backend.onrender.com/ping')
+        .then(res => {
+          if (res.ok) {
+            console.log(`[PING] ✅ Backend alive - ${new Date().toLocaleTimeString()}`);
+          } else {
+            console.warn(`[PING] ⚠️ Backend responded with status ${res.status}`);
+          }
+        })
+        .catch(err => {
+          console.error(`[PING] ❌ Error pinging backend:`, err.message);
+        });
+    };
+
+    // Initial ping on page load
+    pingBackend();
+
+    // Ping every 5 minutes
+    const interval = setInterval(pingBackend, 5 * 60 * 1000); // 5 mins
+
+    // Cleanup on component unmount
+    return () => clearInterval(interval);
+  }, []);
+  // FOR KEEPING BACKEND ALIVE - SCRIPT ENDS HERE
 
   const[countForAnimation,setCountAnimation]=useState(0);
   localStorage.setItem('countForAnimation',countForAnimation);
