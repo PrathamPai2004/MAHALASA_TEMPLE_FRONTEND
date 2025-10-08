@@ -57,7 +57,7 @@ function Mahalasa(){
 					Your browser does not support the video tag.
 					</video>
 				</div> */ }
-				<h1 id='mahalasa-heading'>|| MAHALASA SAUNSTHAN MARDOL ||</h1>	
+				<h1 id='mahalasa-heading'>|| SHRI MAHALASA SAUNSTHAN MARDOL ||</h1>	
 				{/* <h1 id='mahalasa-heading'>|| MAHALASA </h1>
 				<h1 id='saunsthan-heading'>SAUNSTHAN</h1>
 				<h1 id='kumta-heading'>KUMTA ||</h1> */}
