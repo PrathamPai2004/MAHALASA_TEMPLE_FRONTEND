@@ -40,7 +40,7 @@ function Mahalasa(){
 			</div>
 			<div className='overlay'></div>
 			<div className="mahalasa-container">
-				<h1 id='mahalasa-heading'>|| MAHALASA SAUNSTHAN KUMTA ||</h1>	
+				<h1 id='mahalasa-heading'>|| SHRI MAHALASA SAUNSTHAN KUMTA ||</h1>	
 				{/* <h1 id='mahalasa-heading'>|| MAHALASA </h1>
 				<h1 id='saunsthan-heading'>SAUNSTHAN</h1>
 				<h1 id='kumta-heading'>KUMTA ||</h1> */}
