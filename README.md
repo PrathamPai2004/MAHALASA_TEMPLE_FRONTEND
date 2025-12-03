@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # MAHALASA_TEMPLE_SITE
 =======
 # React + Vite
