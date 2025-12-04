@@ -1,4 +1,4 @@
-import { useState,useEffect} from 'react'
+import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -25,48 +25,13 @@ import SplineLayer from './components/SplineLayer'
 import Media from './components/Media'
 import LoginPage from './components/admin/LoginPage'
 import Dashboard from './components/admin/Dashboard'
+import BhajanPlayer from './components/BhajanPlayer'
+import TempleChatbot from './components/TempleChatbot'
 
 
 
-function ProtectedDashboard() {
-  const { username } = useParams();
-
-  const isLoggedIn = localStorage.getItem('isLoggedIn');
-  if (username !== "abc" && isLoggedIn!=true) {
-
-    return <Navigate to="/" replace />;
-  }
-
-  return <Dashboard />;
-}
 
 function App() {
-  // FOR KEEPING BACKEND ALIVE - SCRIPT STARTS HERE
-  useEffect(() => {
-    const pingBackend = () => {
-      fetch('https://mahalasa-temple-backend.onrender.com/ping')
-        .then(res => {
-          if (res.ok) {
-            console.log(`[PING] ✅ Backend alive - ${new Date().toLocaleTimeString()}`);
-          } else {
-            console.warn(`[PING] ⚠️ Backend responded with status ${res.status}`);
-          }
-        })
-        .catch(err => {
-          console.error(`[PING] ❌ Error pinging backend:`, err.message);
-        });
-    };
-
-    // Initial ping on page load
-    pingBackend();
-
-    // Ping every 5 minutes
-    const interval = setInterval(pingBackend, 5 * 60 * 1000); // 5 mins
-
-    // Cleanup on component unmount
-    return () => clearInterval(interval);
-  }, []);
-  // FOR KEEPING BACKEND ALIVE - SCRIPT ENDS HERE
 
   const[countForAnimation,setCountAnimation]=useState(0);
   localStorage.setItem('countForAnimation',countForAnimation);
@@ -93,7 +58,9 @@ function App() {
        <Route path='/media' element={<Media/>}></Route>
        <Route path='/spline' element={<SplineLayer/>}></Route>
        <Route path='/admin' element={<LoginPage/>}></Route>
-       <Route path='/admin/dashboard/:username' element={<ProtectedDashboard/>}></Route>
+       <Route path='/admin/dashboard/:username' element={<LoginPage/>}></Route>
+       <Route path='/Bhajans' element={<BhajanPlayer/>}></Route>
+       <Route path='/chatbot' element={<TempleChatbot />} />
        <Route path="*" element={<div>404: Page Not Found</div>} />
       </Routes>
     </BrowserRouter>
@@ -105,3 +72,4 @@ function App() {
 // exports.countForAnimation;
 
 export default App
+
