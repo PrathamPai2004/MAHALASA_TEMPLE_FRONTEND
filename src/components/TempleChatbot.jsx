@@ -12,7 +12,7 @@ export default function TempleChatbot() {
     const userMsg = { sender: "user", text: input };
     setMessages((prev) => [...prev, userMsg]);
 
-    const res = await fetch("http://localhost:3001/chat", {
+    const res = await fetch("https://mahalasa-temple-backend.onrender.com/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question: input }),
@@ -91,3 +91,4 @@ export default function TempleChatbot() {
 );
 
 }
+
