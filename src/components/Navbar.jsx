@@ -11,6 +11,7 @@ function Navbar() {
         <Link to="/sevas">Sevas</Link>
         <Link to="/media">Media</Link>
         <Link to='/admin'>Admin</Link>
+        <Link to='/chatbot'>ChatBOT</Link>
       </div>
     </>
   );
