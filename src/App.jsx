@@ -25,7 +25,6 @@ import SplineLayer from './components/SplineLayer'
 import Media from './components/Media'
 import LoginPage from './components/admin/LoginPage'
 import Dashboard from './components/admin/Dashboard'
-import BhajanPlayer from './components/BhajanPlayer'
 import TempleChatbot from './components/TempleChatbot'
 
 
@@ -59,7 +58,6 @@ function App() {
        <Route path='/spline' element={<SplineLayer/>}></Route>
        <Route path='/admin' element={<LoginPage/>}></Route>
        <Route path='/admin/dashboard/:username' element={<LoginPage/>}></Route>
-       <Route path='/Bhajans' element={<BhajanPlayer/>}></Route>
        <Route path='/chatbot' element={<TempleChatbot />} />
        <Route path="*" element={<div>404: Page Not Found</div>} />
       </Routes>
