@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Dashboard from "./Dashboard.jsx";
-
+import '../../styles/adminLogin.css';
 
 function LoginPage() {
   const [username, setUsername] = useState("");
@@ -11,6 +11,7 @@ function LoginPage() {
   const [message,setMessage] = useState("");
   
  const navigate = useNavigate();
+ 
  const handleSubmit = async (e)=>{
     e.preventDefault();
     console.log("Username:", username);
@@ -18,10 +19,14 @@ function LoginPage() {
     try{
       const res = await axios.post('https://mahalasa-temple-backend.onrender.com/admin-login',{username,password});
       console.log(res.data.message)
-      if(res.data.message === "success"){``
+      if(res.data.message === "success"){
         localStorage.setItem("isLoggedIn", "true");
         setDashboard(true);
         // navigate(`/admin/dashboard/${res.data.username}`);
+      }
+      if(res.data.status === 401){
+        console.log(res.data.message)
+        setMessage("Invalid Password");
       }
       else{
         setMessage("Invalid Credentials");
@@ -59,11 +64,11 @@ function LoginPage() {
   }
   return (
     <>
-      <h2 style={{textAlign:"center"}}>Admin  Page of Mahalasa</h2>
-      <p>Please login your username as "abc" and Passsword "abc" as the site is under Demo</p>
-    <div style={{ maxWidth: "1000px",width:"40vw", margin: "50px auto", padding: "20px", border: "1px solid #ccc", borderRadius: "8px" }}>
+      <h2 style={{textAlign:"center"}} className="login-title">Admin  Page of Mahalasa</h2>
+      <p className="login-subtitle">Please login your username as "abc" and Passsword "abc" as the site is under Demo</p>
+    <div className="login-container">
       
-      {message && <p style={{ color: "red", textAlign: "center" }}>{message}</p>}
+      {message && <p style={{ color: "red", textAlign: "center"}} className="error-message">{message}</p>}
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: "15px" }}>
           <label htmlFor="username">Username</label><br />
@@ -87,7 +92,7 @@ function LoginPage() {
             style={{ width: "100%", padding: "8px" }}
           />
         </div>
-        <button type="submit" style={{ width: "100%", padding: "10px" }}>
+        <button type="submit" style={{ width: "100%", padding: "10px" }} className="login-btn">
           Login
         </button>
       </form>
