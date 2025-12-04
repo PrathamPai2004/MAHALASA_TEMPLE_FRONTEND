@@ -82,8 +82,9 @@ export default function TempleChatbot() {
       </div>
 
       <footer className="tp-footer">
-        © {new Date().getFullYear()} Your Temple | Powered by Mistral + Ollama
+        © {new Date().getFullYear()} Pratham's Temple Project | Powered by Groq
       </footer>
     </div>
   );
 }
+
