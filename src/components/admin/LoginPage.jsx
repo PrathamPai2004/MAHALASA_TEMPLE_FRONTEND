@@ -65,7 +65,7 @@ function LoginPage() {
   return (
     <>
       <h2 style={{textAlign:"center"}} className="login-title">Admin  Page of Mahalasa</h2>
-      <p className="login-subtitle">Please login your username as "abc" and Passsword "abc" as the site is under Demo</p>
+      <p className="login-subtitle">Please login your username as "admin" and Passsword "admin123" as the site is under Demo</p>
     <div className="login-container">
       
       {message && <p style={{ color: "red", textAlign: "center"}} className="error-message">{message}</p>}
